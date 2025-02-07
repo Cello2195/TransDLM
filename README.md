@@ -22,7 +22,7 @@ The following details are important for you to know before you actually train th
 2) The loss will finally converges to around 0.015 (This value depends on the amount of trainable parameters, 0.015 is for the model in this code. Within reasonble range, bigger the model, smaller the loss). It is possible that the loss in your experiment will not converge to 0.02 (below 0.025) and stuck at a relative high value (such as 0.08), we suggest you re-run the training procedure with another random seed.
 
 ### Sampling
-1. `python text_sample.py; python post_sample.py` The final file `OURMODEL_OUTPUT.txt` is our output.
+1. `python sample.py` The final file `OURMODEL_OUTPUT.txt` is our output.
 
 ### Evaluation
 you can evaluate all metrics by runnning `ev.py`.
@@ -32,25 +32,3 @@ you can evaluate all metrics by runnning `ev.py`.
 - python3
 - pytorch
 - transformers (Be careful to follow the readme installation exactly.)
-
-<!-- ## Citation -->
-
-<!-- Please cite our paper if you use the code: -->
-
-<!-- ```
-@article{gong2024text,
-  title={Text-Guided Molecule Generation with Diffusion Language Model},
-  author={Gong, Haisong and Liu, Qiang and Wu, Shu and Wang, Liang},
-  volume={38},
-  url={https://ojs.aaai.org/index.php/AAAI/article/view/27761},
-  DOI={10.1609/aaai.v38i1.27761},
-  number={1},
-  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2024},
-  month={Mar.},
-  pages={109-117}
-}
-``` -->
-
-<!-- ## Acknowledge -->
-<!-- This code is based on https://github.com/XiangLi1999/Diffusion-LM and https://github.com/blender-nlp/MolT5 -->
